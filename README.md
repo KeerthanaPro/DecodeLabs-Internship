@@ -52,4 +52,7 @@ Rule Engine
 Response Generator
 ↓
 Chat Window Output
+## Screenshots
+<img width="1868" height="866" alt="image" src="https://github.com/user-attachments/assets/43489902-761c-49e0-a938-39ee4aae4297" />
+<img width="1878" height="855" alt="image" src="https://github.com/user-attachments/assets/3b272da0-2d03-4607-ba3c-931c51f4a69d" />
 
