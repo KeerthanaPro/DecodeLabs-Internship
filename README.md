@@ -41,3 +41,15 @@ A **Rule-Based AI Chatbot Assistant** built with Python Flask that responds to p
 
 ## 📋 Architecture
 
+User Input
+↓
+Input Sanitization
+(lowercase, remove spaces)
+↓
+Rule Engine
+(Dictionary / If-Else Logic)
+↓
+Response Generator
+↓
+Chat Window Output
+
