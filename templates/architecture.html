@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Architecture - RMK Chatbot{% endblock %}
+
+{% block content %}
+<div class="architecture-container">
+    <h1>🏗️ System Architecture</h1>
+    
+    <div class="flowchart">
+        <div class="flow-step">
+            <div class="step-box">👤 User</div>
+            <div class="step-arrow">↓</div>
+        </div>
+        <div class="flow-step">
+            <div class="step-box">📝 User Input</div>
+            <div class="step-arrow">↓</div>
+        </div>
+        <div class="flow-step">
+            <div class="step-box">🧹 Input Sanitization<br><small>(lowercase, remove punctuation)</small></div>
+            <div class="step-arrow">↓</div>
+        </div>
+        <div class="flow-step">
+            <div class="step-box">⚙️ Rule Engine<br><small>(Dictionary / If-Else Logic)</small></div>
+            <div class="step-arrow">↓</div>
+        </div>
+        <div class="flow-step">
+            <div class="step-box">📤 Response Generator</div>
+            <div class="step-arrow">↓</div>
+        </div>
+        <div class="flow-step">
+            <div class="step-box">💬 Chat Window Output</div>
+        </div>
+    </div>
+
+    <div class="ipo-section">
+        <h2>📊 IPO Model</h2>
+        <div class="ipo-grid">
+            <div class="ipo-box input">
+                <h3>Input</h3>
+                <p>User types a message</p>
+                <code>"hello"</code>
+            </div>
+            <div class="ipo-box process">
+                <h3>Process</h3>
+                <p>Sanitize → Lookup → Match</p>
+                <code>responses["hello"]</code>
+            </div>
+            <div class="ipo-box output">
+                <h3>Output</h3>
+                <p>Bot response</p>
+                <code>"Hello! Welcome."</code>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

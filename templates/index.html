@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - RMK Chatbot{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <h1>🤖 Rule-Based AI Chatbot</h1>
+        <p class="subtitle">Intelligent conversation using rule-based logic</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('chat') }}" class="btn-primary">Start Chat 💬</a>
+            <a href="{{ url_for('about') }}" class="btn-secondary">Learn More 📖</a>
+        </div>
+    </div>
+    <div class="hero-features">
+        <div class="feature-card">
+            <span class="feature-icon">🧠</span>
+            <h3>Rule-Based Logic</h3>
+            <p>Predefined responses using dictionary mapping</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">⚡</span>
+            <h3>Real-Time Chat</h3>
+            <p>Interactive dashboard with instant responses</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">📊</span>
+            <h3>Analytics Panel</h3>
+            <p>Track total, known & unknown queries</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

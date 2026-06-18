@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Chat - Keerthana's Chatbot{% endblock %}
+
+{% block content %}
+<div class="chat-container">
+    <div class="chat-main">
+        <div class="chat-header">
+            <h2>💬 Chat Window</h2>
+            <span class="online-status">● Online</span>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">
+                    Hi! I'm Keerthana's Chatbot. How can I help you today? 🤖
+                </div>
+                <div class="message-time">Just now</div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Type your message..." autofocus>
+            <button id="sendBtn" class="btn-send">Send ➤</button>
+        </div>
+    </div>
+
+    <div class="stats-panel">
+        <h3>📊 Statistics</h3>
+        <div class="stat-item">
+            <span class="stat-label">Total Questions</span>
+            <span class="stat-value" id="totalQuestions">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Known Queries</span>
+            <span class="stat-value" id="knownQueries">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Unknown Queries</span>
+            <span class="stat-value" id="unknownQueries">0</span>
+        </div>
+        <div class="stat-item unknown-list">
+            <span class="stat-label">Unknown Questions</span>
+            <ul id="unknownList">
+                <li style="color:#999; font-size:14px;">No unknown queries yet</li>
+            </ul>
+        </div>
+        <button class="btn-reset" id="resetStats">Reset Stats 🔄</button>
+    </div>
+</div>
+{% endblock %}
