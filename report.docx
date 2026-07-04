@@ -1,0 +1,36 @@
+Title
+
+Data Classification Using AI
+
+Objective
+
+Build a classification model using the Iris Dataset and KNN Algorithm.
+
+Tools Used
+Python
+VS Code
+Scikit-Learn
+Pandas
+NumPy
+Algorithm
+
+K-Nearest Neighbors (KNN)
+
+Dataset
+
+Iris Dataset
+
+Process
+Load Dataset
+Split Dataset
+Feature Scaling
+Train KNN Model
+Predict Results
+Evaluate Accuracy
+Result
+
+Model achieved approximately 96–100% accuracy.
+
+Conclusion
+
+Successfully implemented a supervised learning classification model using the Iris Dataset.
